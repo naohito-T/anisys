@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+.error {
+	color: red;
+	font-size: 0.8em;
+
+}
+
+.left {
+	float: left;
+	width: 45%;
+	margin-top: 20px;
+}
+.main {
+	float: left;
+	width: 90%;
+}
+.right {
+    float: left;
+	width: 30%;
+    margin-top: 60px;
+}

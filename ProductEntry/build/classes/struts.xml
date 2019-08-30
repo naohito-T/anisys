@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <constant name="struts.ui.theme" value="simple"/>
+    <package name="ProductEntry.action" extends="struts-default">
+
+
+		<action name="HomeAction" class="action.HomeAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+        </action>
+
+        <action name="ProductDetalisAction" class="action.ProductDetalisAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+        </action>
+
+        <action name="ProductChangeAction" class="action.ProductChangeAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+            <result name="error">/productEntry.jsp</result>
+        </action>
+
+        <action name="ProductDeleteAction" class="action.ProductDeleteAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+            <result name="error">/productEntry.jsp</result>
+        </action>
+
+        <action name="BackAction" class="action.BackAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+        </action>
+
+        <action name="GoBackAction" class="action.GoBackAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+        </action>
+
+ 		<action name="ProductEntryAction" class="action.ProductEntryAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+            <result name="error">/productEntry.jsp</result>
+        </action>
+
+        <action name="ProductDetalisSmallAction" class="action.ProductDetalisSmallAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+        </action>
+
+        <action name="ClearAction" class="action.ClearAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+        </action>
+
+        <action name="CancelAction" class="action.CancelAction" method="execute">
+            <result name="success">/productEntry.jsp</result>
+        </action>
+
+
+    </package>
+
+</struts>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <constant name="struts.ui.theme" value="simple"/>
+    <package name="Employee.action" extends="struts-default">
+
+
+		<action name="HomeAction" class="action.HomeAction" method="execute">
+            <result name="success">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="EmployeeEntryAction" class="action.EmployeeEntryAction" method="execute">
+            <result name="success">/employeeEntrySuccess.jsp</result>
+            <result name="update">/employeeUpdateSuccess.jsp</result>
+            <result name="error">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="EmployeeListAction" class="action.EmployeeListAction" method="execute">
+            <result name="success">/employeeList.jsp</result>
+        </action>
+
+        <action name="EmployeeSerchAction" class="action.EmployeeSerchAction" method="execute">
+            <result name="success">/employeeList.jsp</result>
+        </action>
+
+        <action name="DeleteAction" class="action.DeleteAction" method="execute">
+            <result name="success">/deleteSuccess.jsp</result>
+            <result name="error">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="PasswordFormAction" class="action.PasswordFormAction" method="execute">
+            <result name="success">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="PasswordCheckAction" class="action.PasswordCheckAction" method="execute">
+            <result name="success">/employeeEntry.jsp</result>
+            <result name="error">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="EmployeeChoiceAction" class="action.EmployeeChoiceAction" method="execute">
+            <result name="success">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="BackAction" class="action.BackAction" method="execute">
+            <result name="success">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="GoBackAction" class="action.GoBackAction" method="execute">
+            <result name="success">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="ClearAction" class="action.ClearAction" method="execute">
+            <result name="success">/employeeEntry.jsp</result>
+        </action>
+
+        <action name="BossListAction" class="action.BossListAction" method="execute">
+            <result name="success">/employeeList.jsp</result>
+        </action>
+
+    </package>
+
+</struts>

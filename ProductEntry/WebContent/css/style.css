@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+.error {
+	color: red;
+	font-size: 0.8em;
+
+}
+
+.txt {
+	 text-align: center;
+}
